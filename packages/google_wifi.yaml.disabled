@@ -1,0 +1,14 @@
+sensor:
+  - platform: google_wifi
+    name: Google WiFi
+
+group:
+  wifi:
+    name: Google WiFi
+    entities:
+      - sensor.google_wifi_status
+      - sensor.google_wifi_uptime
+      - sensor.google_wifi_last_restart
+      - sensor.google_wifi_current_version
+      - sensor.google_wifi_local_ip
+      - sensor.google_wifi_new_version

@@ -1,0 +1,94 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret homeassistant_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  # Customization file
+  customize: !include_dir_merge_named customize
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend 
+frontend:
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: !secret configurator_server
+
+  ssh_server:
+    title: SSH Server
+    icon: mdi:wrench
+    url: !secret ssh_server
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 172.16.1.0/16
+    track_new_devices: yes
+
+  - platform: owntracks
+    max_gps_accuracy: 200
+    mqtt_topic: "owntracks/#"
+
+mqtt:
+  broker: !secret MQTT_server
+  port: 16312
+  username: !secret MQTT_username
+  password: !secret MQTT_password
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+sensor: !include_dir_merge_list sensor
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+switch: !include_dir_merge_list switch
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

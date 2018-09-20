@@ -1,0 +1,3 @@
+- platform: nmap_tracker
+  hosts: 172.16.1.0/16
+  track_new_devices: yes

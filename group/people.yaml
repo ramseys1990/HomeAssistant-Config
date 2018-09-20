@@ -1,0 +1,5 @@
+Family:
+  entities:
+    - device_tracker.shawn
+    - device_tracker.jessica
+    - device_tracker.caison

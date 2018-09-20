@@ -1,0 +1,3 @@
+- platform: tplink
+  name: Weird_Room_Lamp
+  host: 172.16.43.43

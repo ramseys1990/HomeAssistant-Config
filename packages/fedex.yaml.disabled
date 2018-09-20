@@ -1,0 +1,5 @@
+sensor:
+  - platform: fedex
+    username: !secret FEDEX_username
+    password: !secret FEDEX_password
+    name: FedEx Packages

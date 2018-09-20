@@ -1,0 +1,15 @@
+Master Bedroom lights:
+  entities:
+    - light.master_bedroom_lamp
+Kids Room lights:
+  entities:
+    - light.kids_room_lamp
+
+Kitchen lights:
+  entities:
+    - light.kitchen_bar
+    - light.kitchen_microwave
+
+Living room lights:
+  entities:
+    - light.living_room_lamp

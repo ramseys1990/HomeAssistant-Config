@@ -1,0 +1,5 @@
+sensor:
+  - platform: ups
+    username: !secret UPS_username
+    password: !secret UPS_password
+    name: UPS Packages
