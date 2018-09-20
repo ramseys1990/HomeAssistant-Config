@@ -16,7 +16,7 @@ homeassistant:
 # Show links to resources in log and frontend
 #introduction:
 
-# Enables the frontend 
+# Enables the frontend
 frontend:
 
 panel_iframe:
@@ -89,6 +89,6 @@ tts:
 cloud:
 
 switch: !include_dir_merge_list switch
-group: !include groups.yaml
+group: !include_dir_merge_list group
 automation: !include automations.yaml
 script: !include scripts.yaml
