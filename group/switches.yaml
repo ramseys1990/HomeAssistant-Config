@@ -1,3 +1,3 @@
 Interior Switches:
   entities:
-    - Weird_Room_Lamp
+    - switch.weird_room_lamp
