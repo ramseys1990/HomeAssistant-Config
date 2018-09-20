@@ -1,5 +1,6 @@
-Family:
+family:
+  name: Family
   entities:
-    - device_tracker.shawn
+    - device_tracker.shawn_phone
     - device_tracker.jessica
     - device_tracker.caison

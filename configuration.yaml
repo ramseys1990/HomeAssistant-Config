@@ -18,6 +18,7 @@ homeassistant:
 
 # Enables the frontend
 frontend:
+  javascript_version: latest
 
 panel_iframe:
   configurator:
@@ -89,6 +90,6 @@ tts:
 cloud:
 
 switch: !include_dir_merge_list switch
-group: !include_dir_merge_list group
+group: !include_dir_merge_named group
 automation: !include automations.yaml
 script: !include scripts.yaml

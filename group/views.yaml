@@ -4,6 +4,7 @@ default_view:
   entities:
     - device_tracker.shawn_phone
     - device_tracker.jessica_phone
+    - group.family
     - sun.sun
 
 living_room:
