@@ -1,0 +1,29 @@
+default_view:
+  name: Home
+  view: yes
+  entities:
+    - device_tracker.shawn_phone
+    - device_tracker.jessica_phone
+    - sun.sun
+
+living_room:
+  name: Living Room
+  icon: mdi:sofa
+  view: yes
+  entities:
+    - light.living_room_lamp
+    - media_player.living_room_speaker
+
+master_bedroom:
+  name: Master Bedroom
+  icon: mdi:bed
+  view: yes
+  entities:
+    - light.master_bedroom_lamp
+
+system:
+  name: System
+  icon: mdi:developer-board
+  view: yes
+  entities:
+    
