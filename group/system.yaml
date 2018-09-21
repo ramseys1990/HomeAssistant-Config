@@ -11,3 +11,9 @@ system_pi_stats:
   - sensor.swap_use_percent
   - sensor.network_in_wlan0
   - sensor.network_out_wlan0
+
+system_speedtest_stats:
+  name: Speedtest Stats
+  entities:
+    sensor.speedtest_download
+    sensor.speedtest_upload

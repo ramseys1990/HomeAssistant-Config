@@ -6,6 +6,7 @@ default_view:
     - device_tracker.jessica_phone
     - group.family
     - sun.sun
+    - group.weather
 
 living_room:
   name: Living Room
@@ -17,7 +18,7 @@ living_room:
 
 master_bedroom:
   name: Master Bedroom
-  icon: mdi:bed
+  icon: mdi:bed-empty
   view: yes
   entities:
     - light.master_bedroom_lamp
@@ -27,3 +28,5 @@ system:
   icon: mdi:developer-board
   view: yes
   entities:
+    - group.system_pi_stats
+    - group.system_speedtest_stats
