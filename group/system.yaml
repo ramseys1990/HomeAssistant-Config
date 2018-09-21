@@ -12,7 +12,7 @@ system_pi_stats:
   - sensor.network_in_wlan0
   - sensor.network_out_wlan0
 
-system_speedtest_stats:S
+system_speedtest_stats:
   name: Speedtest Stats
   entities:
     - sensor.speedtest_download
