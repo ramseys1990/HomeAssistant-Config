@@ -85,6 +85,17 @@ notify:
     host: 172.16.103.151
     name: livingroom_tv
 
+  - name: telegram
+    platform: telegram
+    api_key: !secret telegram_api
+    chat_id: !secret telegram_chatID
+
+telegram_bot:
+  platform: polling
+  api_key: !secret telegram_api
+  allowed_chat_ids:
+    - !secret telegram_chatID
+
 sensor: !include_dir_merge_list sensor
 
 # Text to speech
