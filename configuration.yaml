@@ -80,6 +80,11 @@ map:
 # Track the sun
 sun:
 
+notify:
+  - platform: webostv
+    host: 172.16.62.8
+    name: livingroom_tv
+
 sensor: !include_dir_merge_list sensor
 
 # Text to speech
