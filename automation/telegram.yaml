@@ -10,5 +10,41 @@
         target: '{{ trigger.event.data.user_id }}'
         message: "Hello, I am the Ramsey House Bot! The custom keyboard is activated."
         keyboard:
-          - '/ping, /statesGen, /simulPres, /guestMode'
-          - '/plafonnier, /motionDetect, /picLiving'
+          - '/ping, /statesGen, /guestMode'
+          - '/weather'
+
+- alias: 'Telebot Ping'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/ping'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "Hello, you sent ping... I send pong... I'm here dammit!"
+
+- alias: 'Telebot GuestMode'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/guestMode'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "Guest mode has been set"
+
+- alias: 'Telebot Weather'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/weather'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "The weather is going to be { sensor.dark_sky_minutely_summary }"
