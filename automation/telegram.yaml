@@ -1,0 +1,14 @@
+- alias: 'Telebot start'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/start'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "Hello, I am the Ramsey House Bot! The custom keyboard is activated."
+        keyboard:
+          - '/ping, /statesGen, /simulPres, /guestMode'
+          - '/plafonnier, /motionDetect, /picLiving'
