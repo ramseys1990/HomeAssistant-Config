@@ -10,7 +10,7 @@
         target: '{{ trigger.event.data.user_id }}'
         message: "Hello, I am the Ramsey House Bot! The custom keyboard is activated."
         keyboard:
-          - '/ping, /statesGen, /guestMode'
+          - '/ping, /start, /guestMode'
           - '/weather'
 
 - alias: 'Telebot Ping'
@@ -47,4 +47,4 @@
     - service: telegram_bot.send_message
       data_template:
         target: '{{ trigger.event.data.user_id }}'
-        message: "The weather is going to be { sensor.dark_sky_minutely_summary }"
+        message: "The weather is going to be {{ sensor.dark_sky_minutely_summary }}"
