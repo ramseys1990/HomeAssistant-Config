@@ -49,7 +49,35 @@
         target: '{{ trigger.event.data.user_id }}'
         message: "The weather is {{ states('sensor.dark_sky_minutely_summary') }}"
 
-- alias: 'Telebot Lights On'
+- alias: 'Telebot Turn Lights On'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/lightsOn'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: group.all_lights
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "Turned all of the lights on!"
+
+- alias: 'Telebot Turn Lights Off'
+  trigger:
+    - platform: event
+      event_type: telegram_command
+      event_data:
+        command: '/lightsOff'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.all_lights
+    - service: telegram_bot.send_message
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        message: "Turned all of the lights off!"
+
+- alias: 'Telebot How Many Lights On'
   trigger:
     - platform: event
       event_type: telegram_command
