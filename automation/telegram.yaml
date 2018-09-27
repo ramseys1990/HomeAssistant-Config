@@ -47,4 +47,4 @@
     - service: telegram_bot.send_message
       data_template:
         target: '{{ trigger.event.data.user_id }}'
-        message: "The weather is going to be {{ sensor.dark_sky_minutely_summary }}"
+        message: 'The weather is {{ states('sensor.dark_sky_minutely_summary') }}''
