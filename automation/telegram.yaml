@@ -12,6 +12,7 @@
         keyboard:
           - '/ping, /start, /guestMode'
           - '/weather'
+          - '/lightsOn, /lightsOff, /totalLights'
 
 - alias: 'Telebot Ping'
   trigger:
@@ -82,7 +83,7 @@
     - platform: event
       event_type: telegram_command
       event_data:
-        command: '/lightsOn'
+        command: '/totalLights'
   action:
     - service: telegram_bot.send_message
       data_template:
