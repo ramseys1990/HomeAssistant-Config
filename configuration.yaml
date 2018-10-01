@@ -51,13 +51,17 @@ updater:
 discovery:
 
 device_tracker:
-  - platform: nmap_tracker
-    hosts: 172.16.1.0/16
-    track_new_devices: yes
+#  - platform: nmap_tracker
+#    hosts: 172.16.1.0/16
+#    track_new_devices: yes
 
   - platform: owntracks
     max_gps_accuracy: 200
     mqtt_topic: "owntracks/#"
+
+  - platform: google_maps
+    username: !secret google_maps_username
+    password: !secret google_maps_password
 
 mqtt:
   broker: !secret MQTT_server
