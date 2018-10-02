@@ -52,8 +52,8 @@ discovery:
 
 http:
   base_url: !secret server_base_url
-  ssl_certificate: /ssl/fullchain.pem
-  ssl_key: /ssl/privkey.pem
+  ssl_certificate: /../ssl/fullchain.pem
+  ssl_key: /../ssl/privkey.pem
 
 device_tracker:
 #  - platform: nmap_tracker
