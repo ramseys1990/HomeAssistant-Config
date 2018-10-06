@@ -1,19 +1,38 @@
 - platform: darksky
   api_key: !secret forecast_key
+  forecast:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
   monitored_conditions:
+    - icon
     - summary
-#    - precip_type
-    - precip_intensity
-    - precip_intensity_max
-    - temperature
-#    - dew_point
-    - wind_speed
-#    - wind_bearing
-    - cloud_cover
+    - nearest_storm_distance
+    - nearest_storm_bearing
     - humidity
-#    - nearest_storm_distance
-    - minutely_summary
-#    - pressure
-#    - visibility
-#    - ozone
-    - uv_index
+    - temperature
+    - temperature_high
+    - temperature_low
+    - apparent_temperature
+    - apparent_temperature_high
+    - apparent_temperature_low
+    - wind_speed
+    - wind_bearing
+    - precip_type
+    - precip_probability
+    - precip_accumulation
+    - precip_intensity
+  update_interval:
+    minutes: 5
+#THESE ARE THE ORIGINAL MONITORED CONDITIONS
+#    - summary
+#    - precip_intensity
+#    - precip_intensity_max
+#    - temperature
+#    - wind_speed
+#    - cloud_cover
+#    - humidity
+#    - minutely_summary
+#    - uv_index
