@@ -90,6 +90,26 @@ views:
           - sensor.swap_use_percent
           - sensor.network_in_wlan0
           - sensor.network_out_wlan0
+      - type: "custom:mini-graph-card"
+        entity: sensor.memory_use_percent
+        name: Memory
+        height: 100
+        line_width: 4
+        color: '#3498db'
+      - type: "custom:mini-graph-card"
+        entity: sensor.disk_use_percent_
+        name: Disk
+        height: 100
+        line_width: 4
+        color: '#3498db'
+      - type: "custom:mini-graph-card"
+        entity: sensor.processor_use
+        name: Processor
+        height: 100
+        line_width: 4
+        color: '#3498db'
+
+
       - type: entities
         title: Speedtest Stats
         show_header_toggle: true
