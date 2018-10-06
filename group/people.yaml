@@ -1,6 +1,8 @@
 family:
   name: Family
   entities:
-    - device_tracker.shawn_phone
-    - device_tracker.jessica
+    #shawn
+    - device_tracker.google_maps_106073408045524414821
+    #jessica
+    - device_tracker.google_maps_114381169443218169566
     - device_tracker.caison

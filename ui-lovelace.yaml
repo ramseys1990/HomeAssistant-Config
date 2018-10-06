@@ -6,6 +6,11 @@ resources:
     type: js
   - url: /local/kiosk-config.js
     type: js
+  - url: /local/tracker-card.js?v=0
+    type: js
+  - url: /local/mini-graph-card.js?v=0.0.2
+    type: module
+
 
 title: Home
 views:
@@ -19,7 +24,10 @@ views:
         title: Family
         show_header_toggle: true
         entities:
-          - device_tracker.shawn_phone
+          #Ramsey
+          - device_tracker.google_maps_106073408045524414821
+          #Jessica
+          - device_tracker.google_maps_114381169443218169566
       - type: entities
         title: Weather
         show_header_toggle: true
@@ -33,12 +41,7 @@ views:
           - sensor.dark_sky_temperature
           - sensor.dark_sky_uv_index
           - sensor.dark_sky_wind_speed
-      - type: picture-glance
-        title: Living room
-        entities:
-#          - switch.decorative_lights
-          - light.living_room_lamp
-        camera_image: camera.livingroom_camera
+
   - title: Master Bedroom
     icon: mdi:bed-empty
     cards:
@@ -48,6 +51,13 @@ views:
   - title: Living Room
     icon: mdi:sofa
     cards:
+      - type: picture-glance
+        title: Living room
+        entities:
+#          - switch.decorative_lights
+          - light.living_room_lamp
+
+        camera_image: camera.livingroom_camera
       - type: entities
         entities:
           - light.living_room_lamp
@@ -86,3 +96,9 @@ views:
         entities:
           - sensor.speedtest_download
           - sensor.speedtest_upload
+
+      - type: custom:tracker-card
+        title:
+        trackers:
+          - sensor.custom_card_tracker
+          - sensor.custom_component_tracker

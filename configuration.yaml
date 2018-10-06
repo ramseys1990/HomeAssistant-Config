@@ -47,6 +47,11 @@ updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
+# Update custom components
+custom_updater:
+  card_urls:
+    # Mini graph lovelace card
+    - https://raw.githubusercontent.com/kalkih/mini-graph-card/master/tracker.json
 # Discover some devices automatically
 discovery:
 
