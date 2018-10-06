@@ -10,7 +10,8 @@ resources:
     type: js
   - url: /local/mini-graph-card.js?v=0.0.2
     type: module
-
+  - url: /local/custom_ui/weather-card.js
+    type: js
 
 title: Home
 views:
@@ -28,6 +29,14 @@ views:
           - device_tracker.google_maps_106073408045524414821
           #Jessica
           - device_tracker.google_maps_114381169443218169566
+      - icon: mdi:weather-cloudy
+        id: weather
+        title: Weather
+        #garage_door_tilt_sensor_alarm_level: Weather
+        cards:
+          - type: "custom:weather-card"
+            entity_weather: weather.yweather
+            entity_sun: sun.sun
       - type: entities
         title: Weather
         show_header_toggle: true
