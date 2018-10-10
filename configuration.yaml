@@ -50,7 +50,7 @@ updater:
 
 # Update custom components
 custom_updater:
-  show_installable: true
+  show_installable: false
   track:
     - components
     - cards
@@ -61,15 +61,15 @@ custom_updater:
 # Discover some devices automatically
 discovery:
 
-http:
-  base_url: !secret server_base_url
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
+#http:
+#  base_url: !secret server_base_url
+#  ssl_certificate: !secret ssl_certificate
+#  ssl_key: !secret ssl_key
 
 device_tracker:
-#  - platform: nmap_tracker
-#    hosts: 172.16.1.0/16
-#    track_new_devices: yes
+  - platform: nmap_tracker
+    hosts: 192.168.86.0/24
+    track_new_devices: yes
 
 #  - platform: owntracks
 #    max_gps_accuracy: 200
