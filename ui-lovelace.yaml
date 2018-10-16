@@ -20,7 +20,6 @@ views:
     cards:
       - type: entities
         entities:
-          - device_tracker.shawn_phone
           - sun.sun
       - type: entities
         title: Family
@@ -144,6 +143,15 @@ views:
             name: Disk
             accuracy: 8
             line_width: 8
+
+      - type: entities
+        title: HASS Details
+        show_header_toggle: false
+        entities:
+          - switch.developer_mode
+          - sensor.hassuptime
+          - sensor.ssl_certificate_expiry
+          - input_select.current_theme
 
       - type: entities
         title: Speedtest Stats
