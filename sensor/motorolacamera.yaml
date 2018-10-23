@@ -1,0 +1,5 @@
+- platform: command_line
+  command: python3 -c "import requests; print(requests.get('http://192.168.86.190/?action=command&command=value_temperature').text)"
+  name: Kids Room Temp
+  value_template: '{{ (value.split(": ")[1]|float * 1.8 + 32)|round }}'
+  unit_of_measurement: °F

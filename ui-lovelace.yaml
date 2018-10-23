@@ -30,14 +30,6 @@ views:
           #Jessica
           - device_tracker.google_maps_114381169443218169566
 
-#      - icon: mdi:weather-cloudy
-#        id: weather
-#        title: Weather
-        #garage_door_tilt_sensor_alarm_level: Weather
-##          - type: "custom:weather-card"
-  #          entity_weather: weather.yweather
-  #          entity_sun: sun.sun
-
       - type: custom:dark-sky-weather-card
         entity_sun: sun.sun
         entity_daily_summary: sensor.dark_sky_daily_summary
@@ -64,26 +56,25 @@ views:
         entity_forecast_icon_4: sensor.dark_sky_icon_4
         entity_forecast_icon_5: sensor.dark_sky_icon_5
 
-#      - type: entities
-#        title: Weather
-#        show_header_toggle: true
-#        entities:
-#          - sensor.dark_sky_cloud_coverage
-#          - sensor.dark_sky_daily_max_precip_intensity
-#          - sensor.dark_sky_humidity
-#          - sensor.dark_sky_minutely_summary
-#          - sensor.dark_sky_precip_intensity
-#          - sensor.dark_sky_summary
-#          - sensor.dark_sky_temperature
-#          - sensor.dark_sky_uv_index
-#          - sensor.dark_sky_wind_speed
-
   - title: Master Bedroom
     icon: mdi:bed-empty
     cards:
       - type: entities
         entities:
           - light.master_bedroom_lamp
+  - title: Kids Bedroom
+    icon: mdi:account-child
+    cards:
+      - type: entities
+        entities:
+          - light.kids_bedroom_lamp
+
+      - type: picture-glance
+        title: Boys room
+        entities:
+          - light.kids_bedroom_lamp
+          - sensor.kids_room_temp
+        camera_image: camera.kids_room_camera
   - title: Living Room
     icon: mdi:sofa
     cards:
