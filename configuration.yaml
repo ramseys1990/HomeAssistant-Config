@@ -106,8 +106,6 @@ sun:
 
 notify:
   - platform: webostv
-    host: 172.16.103.151
-    name: livingroom_tv
 
   - name: telegram
     platform: telegram
@@ -135,9 +133,8 @@ camera:
     still_image_url: !secret living_room_camera
 
   #Boys Room Monitor
-  - platform: mjpeg
-    name: Kids Room Camera
-    mjpeg_url: !secret boysRoomCameraVideo
+  - name: kids_room_camera
+    platform: generic
     still_image_url: !secret boysRoomCameraStill
 
 switch: !include_dir_merge_list switch

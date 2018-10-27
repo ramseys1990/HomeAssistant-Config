@@ -67,12 +67,12 @@ views:
     cards:
       - type: entities
         entities:
-          - light.kids_bedroom_lamp
+          - light.kids_room_lamp
 
       - type: picture-glance
         title: Boys room
         entities:
-          - light.kids_bedroom_lamp
+          - light.kids_room_lamp
           - sensor.kids_room_temp
         camera_image: camera.kids_room_camera
   - title: Living Room
@@ -150,7 +150,13 @@ views:
         entities:
           - sensor.speedtest_download
           - sensor.speedtest_upload
-
+      - type: entities
+        title: Travis-CI Stats
+        show_header_toggle: true
+        entities:
+          - sensor.j00lzhomeassistantconfig_last_build_started_at
+          - sensor.j00lzhomeassistantconfig_last_build_finished_at
+          - sensor.j00lzhomeassistantconfig_last_build_state
       - type: custom:tracker-card
         title:
         trackers:
