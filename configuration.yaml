@@ -106,6 +106,8 @@ sun:
 
 notify:
   - platform: webostv
+    host: 192.168.86.192
+    name: weirdroom_tv
 
   - name: telegram
     platform: telegram
