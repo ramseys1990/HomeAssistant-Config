@@ -135,8 +135,9 @@ camera:
     still_image_url: !secret living_room_camera
 
   #Boys Room Monitor
-  - name: kids_room_camera
-    platform: generic
+  - platform: mjpeg
+    name: kids_room_camera
+    mjpeg_url: !secret boysRoomCameraVideo
     still_image_url: !secret boysRoomCameraStill
 
 switch: !include_dir_merge_list switch
