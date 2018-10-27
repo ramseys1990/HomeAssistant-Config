@@ -16,10 +16,6 @@ homeassistant:
 # Show links to resources in log and frontend
 #introduction:
 
-# Enables the frontend
-frontend:
-  javascript_version: latest
-
 panel_iframe:
   configurator:
     title: Configurator
@@ -144,3 +140,6 @@ switch: !include_dir_merge_list switch
 group: !include_dir_merge_named group
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
+input_select: !include input_select.yaml
+# Enables the frontend
+frontend: !include frontend.yaml
