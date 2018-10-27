@@ -22,6 +22,9 @@ views:
         entities:
           - sun.sun
       - type: entities
+        entities:
+          - sensor.zestimate
+      - type: entities
         title: Family
         show_header_toggle: true
         entities:
@@ -81,7 +84,6 @@ views:
       - type: picture-glance
         title: Living room
         entities:
-#          - switch.decorative_lights
           - light.living_room_lamp
 
         camera_image: camera.livingroom_camera
