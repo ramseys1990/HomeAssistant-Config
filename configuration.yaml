@@ -79,11 +79,11 @@ device_tracker:
     username: !secret google_maps_username
     password: !secret google_maps_password
 
-mqtt:
-  broker: !secret MQTT_server
-  port: 16312
-  username: !secret MQTT_username
-  password: !secret MQTT_password
+#mqtt:
+#  broker: !secret MQTT_server
+#  port: 16312
+#  username: !secret MQTT_username
+#  password: !secret MQTT_password
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
