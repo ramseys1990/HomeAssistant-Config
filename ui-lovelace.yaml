@@ -111,7 +111,6 @@ views:
     title: Dining Room
     icon: mdi:silverware-variant
     cards:
-      - id: b348e93a4eac4b25b5f45a9aaa9f200c
       - type: entities
         entities:
           - light.dining_room_bar
