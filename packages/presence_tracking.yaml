@@ -1,0 +1,55 @@
+###### CUSTOMIZE ----------------------------------------
+
+
+homeassistant:
+  customize:
+
+    sensor.time_at_home_today:
+      icon: mdi:clock-outline
+    sensor.time_away_today:
+      icon: mdi:clock-outline
+
+
+###### GROUPS ----------------------------------------
+
+
+group:
+  status:
+    control: hidden
+    entities:
+      - sensor.time_at_home_today
+      - sensor.time_away_today
+
+
+###### SENSORS ------------------------------------------
+
+sensor:
+
+  - platform: history_stats
+    name: Time Home
+    entity_id: binary_sensor.sean_presence
+    state: 'on'
+    type: time
+    start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Time Away
+    entity_id: binary_sensor.sean_presence
+    state: 'off'
+    type: time
+    start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    end: '{{ now() }}'
+
+
+  - platform: template
+    sensors:
+      time_at_home_today:
+        friendly_name: 'Time Home Today'
+        value_template: '{{states.sensor.time_home.attributes.value}}'
+
+  - platform: template
+    sensors:
+      time_away_today:
+        friendly_name: 'Time Away Today'
+        value_template: '{{states.sensor.time_away.attributes.value}}'

@@ -69,6 +69,7 @@ views:
         type: entities
         entities:
           - light.master_bedroom_lamp
+
   - id: 2  # Automatically created id
     title: Kids Bedroom
     icon: mdi:account-child
