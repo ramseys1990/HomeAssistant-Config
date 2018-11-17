@@ -27,16 +27,16 @@ sensor:
 
   - platform: history_stats
     name: Time Home
-    entity_id: binary_sensor.sean_presence
-    state: 'on'
+    entity_id: device_tracker.google_maps_106073408045524414821
+    state: 'Home'
     type: time
     start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
     end: '{{ now() }}'
 
   - platform: history_stats
     name: Time Away
-    entity_id: binary_sensor.sean_presence
-    state: 'off'
+    entity_id: device_tracker.google_maps_106073408045524414821
+    state: 'Away'
     type: time
     start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
     end: '{{ now() }}'
