@@ -141,6 +141,6 @@ group: !include_dir_merge_named group
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
 input_select: !include input_select.yaml
-packages: !include_dir_named packages
+#packages: !include_dir_named packages
 # Enables the frontend
 frontend: !include frontend.yaml
