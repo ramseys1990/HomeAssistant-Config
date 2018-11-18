@@ -12,7 +12,7 @@ homeassistant:
   time_zone: America/New_York
   # Customization file
   customize: !include_dir_merge_named customize
-
+  packages: !include_dir_named packages
 # Show links to resources in log and frontend
 #introduction:
 
