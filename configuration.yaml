@@ -15,6 +15,12 @@ homeassistant:
   packages: !include_dir_named packages
 # Show links to resources in log and frontend
 #introduction:
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
 
 panel_iframe:
   configurator:
