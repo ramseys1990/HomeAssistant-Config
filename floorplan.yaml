@@ -31,11 +31,12 @@
 
         - name: Lights
           entities:
-             - light.hallway
-             - light.living_room
-             - light.patio
-             - group.kitchen_lights
-             - group.living_room_lights
+             - light.kids_room_lamp
+             - light.kitchen_bar
+             - light.kitchen_microwave
+             - light.living_room_lamp
+             - light.master_bedroom_lamp
+             - light.dining_room_bar
           states:
             - state: 'on'
               class: 'light-on'
@@ -47,7 +48,7 @@
 
         - name: Switches
           entities:
-             - switch.doorbell
+             - switch.weird_room_lamp
           states:
             - state: 'on'
               class: 'doorbell-on'
