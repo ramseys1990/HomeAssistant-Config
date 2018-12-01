@@ -2,6 +2,9 @@ page_id: clock
 image: /local/custom_ui/floorplan/clock.svg
 stylesheet: /local/custom_ui/floorplan/clock.css
 
+
+warnings:
+  
 variables:
   - name: floorplan.hours
   - name: floorplan.minutes
