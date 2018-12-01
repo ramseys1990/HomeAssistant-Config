@@ -63,7 +63,7 @@
 
         - name: Cameras
           entities:
-            - camera.kids_room
+            - camera.kids_room_camera
             - camera.weird_room
           image_template: '${entity.attributes.entity_picture}'
           states:
