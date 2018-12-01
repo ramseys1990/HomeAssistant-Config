@@ -24,12 +24,12 @@ panel_custom:
 #  - name: clock
 #    sidebar_title: Floorplan Clock
 #    sidebar_icon: mdi:home
-#    url_path: floorplan
+#    url_path: clock
 #    config: !include clock.yaml
 #  - name: alarm
 #    sidebar_title: Floorplan Alarm
 #    sidebar_icon: mdi:home
-#    url_path: floorplan
+#    url_path: alarm
 #    config: !include alarm.yaml
 
 panel_iframe:
