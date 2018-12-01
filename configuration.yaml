@@ -24,13 +24,13 @@ panel_custom:
       hide_app_toolbar:
       config: /local/custom_ui/floorplan/floorplan.yaml
 
-  - name: alarm
-    sidebar_title: Alarm Panel
-    sidebar_icon: mdi:security-home
-    url_path: alarm
-    config:
-      hide_app_toolbar:
-      config: /local/custom_ui/floorplan/alarm.yaml
+#  - name: alarm
+#    sidebar_title: Alarm Panel
+#    sidebar_icon: mdi:security-home
+#    url_path: alarm
+#    config:
+#      hide_app_toolbar:
+#      config: /local/custom_ui/floorplan/alarm.yaml
 
   - name: clock
     sidebar_title: Alarm Clock
