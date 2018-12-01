@@ -4,7 +4,7 @@ stylesheet: /local/custom_ui/floorplan/clock.css
 
 
 warnings:
-  
+
 variables:
   - name: floorplan.hours
   - name: floorplan.minutes
@@ -13,7 +13,7 @@ defaults:
   hover_over: false
   more_info: false
 
-rules:
+groups:
 
   - element: floorplan.clock_button
     action:
