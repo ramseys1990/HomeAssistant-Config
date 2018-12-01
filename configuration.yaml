@@ -20,9 +20,7 @@ panel_custom:
     sidebar_title: Floorplan
     sidebar_icon: mdi:home
     url_path: floorplan
-    config:
-      hide_app_toolbar:
-      config: !include floorplan.yaml
+    config: !include floorplan.yaml
 
 #  - name: alarm
 #    sidebar_title: Alarm Panel
