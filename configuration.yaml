@@ -32,7 +32,7 @@ panel_custom:
     sidebar_title: Alarm Clock
     sidebar_icon: mdi:alarm
     url_path: clock
-    config: !include floorclock.yaml
+    config: !include clock.yaml
 #  - name: clock
 #    sidebar_title: Floorplan Clock
 #    sidebar_icon: mdi:home
