@@ -1,6 +1,9 @@
   javascript_version: latest
 
   themes:
+    happy:
+      primary-color: black
+      background-color: black
     teal:
       # Main Stuff #
       primary-color: "#1DE9B6" # Primary (most of the UI)
