@@ -112,8 +112,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 91.5%
-              left: 32.6%
+              top: 58%
+              left: 34.6%
               width: 3%
 
            - type: image
@@ -124,8 +124,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 39%
-              left: 43.7%
+              top: 52%
+              left: 49%
               width: 3%
 
            - type: image
@@ -136,8 +136,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 69%
-              left: 40%
+              top: 67%
+              left: 60%
               width: 3%
 
            - type: image
@@ -149,8 +149,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 39%
-              left: 39.7%
+              top: 95%
+              left: 47%
               width: 3%
 
            - type: image
@@ -161,8 +161,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 39%
-              left: 32.6%
+              top: 30%
+              left: 79%
               width: 3%
 
            - type: image
@@ -174,8 +174,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 56%
-              left: 30.5%
+              top: 93.5%
+              left: 79.8%
               width: 3%
 
            - type: image
@@ -186,8 +186,8 @@ views:
               "off": /local/assets/lightbulb.png
               "on": /local/assets/lightbulb_on.png
              style:
-              top: 70%
-              left: 88%
+              top: 24%
+              left: 60%
               width: 3%
 
 #           - type: image
@@ -511,7 +511,7 @@ views:
              tap_action: toggle
              image: /local/assets/button_status.png
              state_image:
-              "locked": /local/assets/button_status_on.png
+              "on": /local/assets/button_status_on.png
              style:
               top: 34.9%
               left: 12.6%
@@ -624,8 +624,8 @@ views:
              entity: sensor.speedtest_ping
              prefix: "ping: "
              style:
-               top: 98.5%
-               left: 74%
+               top: 87.5%
+               left: 95%
                font-size: 1em
                text-align: left
                width: 160px
@@ -636,8 +636,8 @@ views:
              entity: sensor.speedtest_download
              prefix: "dl: "
              style:
-               top: 98.5%
-               left: 49%
+               top: 91.5%
+               left: 95%
                font-size: 1em
                text-align: left
                width: 160px
@@ -648,8 +648,8 @@ views:
              entity: sensor.speedtest_upload
              prefix: "ul: "
              style:
-               top: 98.5%
-               left: 63%
+               top: 95.5%
+               left: 95%
                font-size: 1em
                text-align: left
                width: 160px
@@ -826,13 +826,13 @@ views:
     - type: picture-elements
       image: /local/assets/generic_background_1280x750.png
       elements:
-#      - type: image
-#        entity: camera.driveway_ptz
-#        camera_image: camera.driveway_ptz
-#        style:
-#         top: 25%
-#         left: 25%
-#         width: 49%
+      - type: image
+        entity: camera.kids_room_camera
+        camera_image: camera.kids_room_camera
+        style:
+         top: 25%
+         left: 25%
+         width: 49%
 
       - type: image
         entity: camera.weird_room_camera
@@ -842,10 +842,10 @@ views:
          left: 75%
          width: 49%
 
-      - type: image
-        entity: camera.kids_room_camera
-        camera_image: camera.kids_room_camera
-        style:
-         top: 75%
-         left: 75%
-         width: 49%
+#      - type: image
+#        entity: camera.kids_room_camera
+#        camera_image: camera.kids_room_camera
+#        style:
+#         top: 75%
+#         left: 75%
+#         width: 49%
