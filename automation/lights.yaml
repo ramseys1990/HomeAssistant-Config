@@ -1,28 +1,28 @@
 # Turns on lights 1 hour before sunset if people are home
 # and if people get home between 16:00-23:00
-  - alias: 'Rule 1 Light on in the evening'
-    trigger:
+#  - alias: 'Rule 1 Light on in the evening'
+#    trigger:
       # Prefix the first line of each trigger configuration
       # with a '-' to enter multiple
-      - platform: sun
-        event: sunset
-        offset: '-01:00:00'
-      - platform: state
-        entity_id: group.all_devices
-        to: 'home'
-    condition:
+#      - platform: sun
+#        event: sunset
+#        offset: '-01:00:00'
+#      - platform: state
+#        entity_id: group.all_devices
+#        to: 'home'
+#    condition:
       # Prefix the first line of each condition configuration
       # with a '-'' to enter multiple
-      - condition: state
-        entity_id: group.all_devices
-        state: 'home'
-      - condition: time
-        after: '16:00:00'
-        before: '23:00:00'
-    action:
+#      - condition: state
+#        entity_id: group.all_devices
+#        state: 'home'
+#      - condition: time
+#        after: '16:00:00'
+#        before: '23:00:00'
+#    action:
       # With a single service call, we don't need a '-' before service - though you can if you want to
-      service: homeassistant.turn_on
-      entity_id: group.living_room
+#      service: homeassistant.turn_on
+#      entity_id: group.living_room
 
 # Turn off lights when everybody leaves the house
   - alias: 'Rule 2 - Away Mode'
