@@ -1,0 +1,12 @@
+- platform: template
+  sensors:
+    local_time:
+     value_template: "{{as_timestamp(now()) | timestamp_custom('%-I:%M %p')}}"
+    local_date:
+     value_template: "{{as_timestamp(now()) | timestamp_custom('%A %B %-d')}}"
+    weather_overnight_low:
+     value_template: "{{ states.sensor.dark_sky_overnight_low_apparent_temperature.state|round }}"
+    weather_daytime_high:
+     value_template: "{{ states.sensor.dark_sky_daytime_high_apparent_temperature.state|round }}"
+    weather_current_temp:
+     value_template: "{{ states.sensor.dark_sky_apparent_temperature.state|round }}"
