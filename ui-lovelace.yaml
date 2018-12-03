@@ -27,8 +27,8 @@ views:
            - type: state-label
              entity: sensor.local_date
              style:
-               top: 11%
-               left: 82.5%
+               top: 28.7%
+               left: 8.8%
                width: 300px
                text-align: right
                font-size: 1.5em
@@ -743,13 +743,13 @@ views:
 
 
 
-#        - type: image
-#          entity: camera.driveway_ptz
-#          image: /local/assets/button_short_invisible.png
-#          style:
-#           top: 97%
-#           left: 9%
-#           width: 19%
+        - type: image
+          entity: camera.kids_room_camera
+          image: /local/assets/button_short_invisible.png
+          style:
+           top: 97%
+           left: 9%
+           width: 19%
         - type: image
           entity: camera.weird_room_camera
           image: /local/assets/button_short_invisible.png
@@ -757,13 +757,13 @@ views:
             top: 90%
             left: 9%
             width: 19%
-        - type: image
-          entity: camera.kids_room_camera
-          image: /local/assets/button_short_invisible.png
-          style:
-           top: 83.1%
-           left: 9%
-           width: 19%
+#        - type: image
+#          entity: camera.kids_room_camera
+#          image: /local/assets/button_short_invisible.png
+#          style:
+#           top: 83.1%
+#           left: 9%
+#           width: 19%
 
 
 
