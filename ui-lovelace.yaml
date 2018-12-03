@@ -567,7 +567,7 @@ views:
              state_image:
               "on": /local/assets/button_status_on.png
              style:
-              top: 66.6%
+              top: 66.5%
               left: 12.6%
               width: 25%
 
