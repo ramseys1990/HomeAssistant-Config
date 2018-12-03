@@ -55,10 +55,10 @@ panel_iframe:
     icon: mdi:wrench
     url: !secret ssh_server
 
-media_player:
-  - platform: xboxone
-    device: !secret xbox_one
-    name: Weird Room Xbox One
+#media_player:
+#  - platform: xboxone
+#    device: !secret xbox_one
+#    name: Weird Room Xbox One
 # Enables configuration UI
 config:
 
@@ -129,9 +129,9 @@ map:
 sun:
 
 notify:
-  - platform: webostv
-    host: 192.168.86.192
-    name: weirdroom_tv
+#  - platform: webostv
+#    host: 192.168.86.192
+#    name: weirdroom_tv
 
   - name: telegram
     platform: telegram
