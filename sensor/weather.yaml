@@ -18,6 +18,10 @@
       - apparent_temperature
       - apparent_temperature_high
       - apparent_temperature_low
+      - daytime_high_apparent_temperature
+      - overnight_low_apparent_temperature
+      - daytime_high_temperature
+      - overnight_low_temperature
       - wind_speed
       - wind_bearing
       - precip_type
