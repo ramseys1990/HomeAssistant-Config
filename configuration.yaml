@@ -89,10 +89,10 @@ custom_updater:
 # Discover some devices automatically
 discovery:
 
-#http:
-#  base_url: !secret server_base_url
-#  ssl_certificate: !secret ssl_certificate
-#  ssl_key: !secret ssl_key
+http:
+  base_url: !secret server_base_url
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
 
 device_tracker:
   - platform: nmap_tracker
