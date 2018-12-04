@@ -398,13 +398,13 @@ views:
               color: rgba(202,217,235,.75)
 
 ### ROOM TEMPERATURES
-#           - type: state-label
-#             entity: sensor.office_temperature
-#             style:
-#              top: 84.3%
-#              left: 33%
-#              font-size: .8em
-#              color: rgba(202,217,235,.5)
+           - type: state-label
+             entity: sensor.kids_room_temp
+             style:
+              top: 84.3%
+              left: 33%
+              font-size: .8em
+              color: rgba(202,217,235,.5)
 
 #           - type: state-label
 #             entity: sensor.downstairs_temperature
@@ -488,14 +488,14 @@ views:
              image: /local/assets/button_short_invisible.png
              style:
               top: 97%
-              left: 91%
+              left: 20%
               width: 19%
            - type: image
              entity: camera.weird_room_camera
              image: /local/assets/button_short_invisible.png
              style:
                top: 90%
-               left: 91%
+               left: 20%
                width: 19%
 #           - type: image
 #             entity: camera.olivers_room
@@ -619,6 +619,17 @@ views:
 #              width: .8%
 
 ### SPEEDTEST
+           - type: state-label
+             entity: sensor.google_wifi_status
+             prefix: "Google WiFi:"
+             style:
+               top: 83.5%
+               left: 95%
+               font-size: 1em
+               text-align: left
+               width: 160px
+               color: rgba(202,217,235,.25)
+               font-style: italic
 
            - type: state-label
              entity: sensor.speedtest_ping
@@ -823,7 +834,7 @@ views:
     panel: true
     cards:
     - type: picture-elements
-      image: /local/assets/generic_background_1280x750.png
+      image: /local/layouts/generic_background_1280x750.png
       elements:
       - type: image
         entity: camera.kids_room_camera
