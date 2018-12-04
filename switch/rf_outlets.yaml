@@ -2,5 +2,6 @@
   name: Weird_Room_Lamp
   host: 192.168.86.21
 
+- platform: tplink
   name: Christmas_Tree
   host: 192.168.86.223
