@@ -96,7 +96,8 @@ discovery:
 
 device_tracker:
   - platform: nmap_tracker
-    hosts: 192.168.86.0/24
+    hosts: 192.168.86.1/24
+    interval_seconds: 30
     track_new_devices: yes
 
 #  - platform: owntracks
