@@ -233,8 +233,8 @@ views:
               "off": /local/assets/christmas_tree.png
               "on": /local/assets/christmas_tree_on.png
              style:
-              top: 43.5%
-              left: 61.5%
+              top: 53.5%
+              left: 78%
               width: 3%
 
 ### FLOORPLAN FANS
@@ -334,8 +334,8 @@ views:
              entity: sensor.weather_current_temp
              suffix: °F
              style:
-              top: 9%
-              left: 35.5%
+              top: 19%
+              left: 15.5%
               width: 150px
               text-align: left
               font-size: 2.8em
@@ -365,8 +365,8 @@ views:
            - type: state-label
              entity: sensor.dark_sky_minutely_summary
              style:
-              top: 13.4%
-              left: 45.5%
+              top: 24.4%
+              left: 27.5%
               width: 350px
               text-align: left
               font-style: italic
@@ -391,8 +391,8 @@ views:
                "partly-cloudy-day": /local/assets/weather/weather_partlycloudy.png
                "partly-cloudy-night": /local/assets/weather/weather_cloudy.png
              style:
-              top: 10%
-              left: 24%
+              top: 19.5%
+              left: 4%
               width: 70px
               font-size: 70px
               color: rgba(202,217,235,.75)
@@ -764,7 +764,6 @@ views:
            top: 83.1%
            left: 9%
            width: 19%
-
 
 
         - type: state-label
