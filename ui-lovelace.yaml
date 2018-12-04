@@ -743,27 +743,27 @@ views:
 
 
 
-        - type: image
-          entity: camera.kids_room_camera
-          image: /local/assets/button_short_invisible.png
-          style:
-           top: 97%
-           left: 9%
-           width: 19%
-        - type: image
-          entity: camera.weird_room_camera
-          image: /local/assets/button_short_invisible.png
-          style:
-            top: 90%
-            left: 9%
-            width: 19%
 #        - type: image
 #          entity: camera.kids_room_camera
 #          image: /local/assets/button_short_invisible.png
 #          style:
-#           top: 83.1%
+#           top: 97%
 #           left: 9%
 #           width: 19%
+#        - type: image
+#          entity: camera.weird_room_camera
+#          image: /local/assets/button_short_invisible.png
+#          style:
+#            top: 90%
+#            left: 9%
+#            width: 19%
+        - type: image
+          entity: camera.kids_room_camera
+          image: /local/assets/button_short_invisible.png
+          style:
+           top: 83.1%
+           left: 9%
+           width: 19%
 
 
 
