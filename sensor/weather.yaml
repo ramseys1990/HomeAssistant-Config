@@ -1,11 +1,11 @@
 - platform: darksky
   api_key: !secret forecast_key
-  forecast:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
+#  forecast:
+#    - 1
+#    - 2
+#    - 3
+#    - 4
+#    - 5
   monitored_conditions:
       - icon
       - summary

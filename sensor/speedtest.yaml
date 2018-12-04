@@ -6,5 +6,6 @@
     - 12
     - 18
   monitored_conditions:
+    - ping
     - download
     - upload
