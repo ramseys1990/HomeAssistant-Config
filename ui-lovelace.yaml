@@ -401,8 +401,8 @@ views:
            - type: state-label
              entity: sensor.kids_room_temp
              style:
-              top: 84.3%
-              left: 33%
+              top: 80.3%
+              left: 75%
               font-size: .8em
               color: rgba(202,217,235,.5)
 
@@ -482,20 +482,20 @@ views:
 
 
 
-### BOTTOM RIGHT BUTTON CLUSTER
+### BOTTOM LEFT BUTTON CLUSTER
            - type: image
              entity: camera.kids_room_camera
              image: /local/assets/button_short_invisible.png
              style:
-              top: 97%
-              left: 20%
+              top: 90%
+              left: 9%
               width: 19%
            - type: image
              entity: camera.weird_room_camera
              image: /local/assets/button_short_invisible.png
              style:
-               top: 90%
-               left: 20%
+               top: 96.7%
+               left: 9%
                width: 19%
 #           - type: image
 #             entity: camera.olivers_room
@@ -621,7 +621,7 @@ views:
 ### SPEEDTEST
            - type: state-label
              entity: sensor.google_wifi_status
-             prefix: "Google WiFi:"
+             prefix: "Google WiFi: "
              style:
                top: 83.5%
                left: 95%

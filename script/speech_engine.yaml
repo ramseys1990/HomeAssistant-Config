@@ -31,8 +31,8 @@ speech_engine:
         media_player: >-
             {% if media_player | length == 0 %}
               {% set media_player = [
-                'media_player.livingroomcc',
-                'media_player.bedroom_alarm_panel'
+                'media_player.kitchen_home',
+                'media_player.living_room_speaker'
               ] %}
             {% endif %}
 
@@ -145,17 +145,10 @@ speech_engine:
           {# Called from Annoucenments #}
           {{ personarriving }}
 
-          {% if call_inside_weather == 1 %}
-            {{ inside_weather() }}
-          {% endif %}
-
           {% if call_outside_weather == 1 and is_state('sun.sun', 'above_horizon') %}
             {{ outside_weather() }}
           {% endif %}
 
-          {% if call_dark_outside == 1 %}
-            {{ dark_outside() }}
-          {% endif %}
 
           {{ NewDevice }}
 
