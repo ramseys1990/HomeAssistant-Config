@@ -154,6 +154,13 @@ tts:
 # Cloud
 cloud:
 
+cast:
+  media_player:
+    #Weird Room Chromecast
+    - host: 192.168.86.235
+    #Living Room Chromecast
+    - host: 192.168.86.30
+
 camera:
   - name: livingroom_camera
     platform: generic
